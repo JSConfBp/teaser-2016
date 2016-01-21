@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>JSConf Budapest 2016</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="JSConf Budapest">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style type="text/css">
+			.reveal .slides {
+			  height: 100% !important;
+				width: 100% !important;
+			  top: 0 !important;
+				left: 0 !important;
+			  margin-top: 0 !important;
+				margin-left: 0 !important;
+				transform: none !important;
+			}
+
+			.reveal .slides > section {
+			  min-height: 100% !important;
+			  top: auto !important;
+			}
+
+			.reveal .slides > section {
+			  min-height: 100% !important;
+			}
+
+
+			.card {
+				width: 20%;
+				height: 25%;
+
+				float: left;
+				-webkit-transform-style: preserve-3d;
+			  -webkit-transition: 0.5s;
+			}
+
+			.card.visible {
+  			-webkit-transform: rotatex(-180deg);
+			}
+
+			.card .face {
+			  width: 100%;
+			  height: 100%;
+			  opacity: 0;
+			  position: absolute;
+			  -webkit-backface-visibility: hidden ;
+			  z-index: 2;
+			    font-family: Georgia;
+			    font-size: 3em;
+			    text-align: center;
+			    line-height: 200px;
+
+			  -webkit-transform: rotatex(-180deg);
+
+			    background: white;
+			    color: black;
+			    cursor: pointer;
+			    opacity: 1;
+
+					background-size: 100% auto;
+					background-position: center center;
+			}
+
+			section.flex {
+				display: flex !important;
+  			align-items: center;
+  			justify-content: center;
+			}
+
+			section.flex.flex-left {
+  			justify-content: flex-start;
+				text-align: left;
+			}
+			section.flex.flex-left .content {
+				padding-left: 10%;
+			}
+
+		</style>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section class="flex" data-background="big-blue-mesh.jpg">
+					<div class="content">
+						<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 792 792" enable-background="new 0 0 792 792" xml:space="preserve" style="width: 60%; height: 60%;">
+						<g id="Layer_1">
+							<rect id="Yellow_square" x="179.8" y="179.7" fill="#F3DF49" width="432.3" height="432.3"/>
+							<g id="JS" transform="translate(0.000000,1052.000000) scale(0.100000,-0.100000)">
+								<path fill="#202020" d="M5045.2,6782.5c-156.2-12.4-287.3-68.6-384.8-165.3C4560,6517.5,4512,6396,4512,6241.9
+									c0-230.6,94.7-391.8,305.9-519.6c53.7-32.2,126.9-67.4,253.4-121.9c172.4-74,236.4-109.1,277.3-152.9
+									c50.4-54.1,64.5-140.5,32.7-206.7c-6.2-12.8-22.3-34.3-36.8-48.8c-48.8-49.2-125.7-75.2-221.1-75.2
+									c-161.2,0-281.5,66.1-378.2,209.1c-13.2,19-25.2,34.7-26.9,34.7c-3.7,0-318.3-181.5-324.9-187.7c-4.1-3.7-0.8-12.4,15.3-38.9
+									c125.7-211.6,322-335.6,587.3-371.2c69.4-9.5,199.6-9.1,266.2,0c167,23.6,292.2,78.9,389.4,173.2
+									c103.3,99.6,154.2,228.6,154.2,390.2c0,103.3-16.9,183.9-55.4,263.7c-26.5,54.6-52.9,91.3-98.4,137.6
+									c-87.2,88.5-200.1,155.4-425.3,252.1c-170.3,73.2-227.3,104.6-264.9,144.7c-36,38.4-51.3,83.5-47.9,139.7
+									c2.9,44.6,15.3,74.8,42.6,104.2c39.3,42.6,84.7,60.3,155,59.9c79.8,0,131.4-20.7,183.9-73.6c18.6-18.2,42.6-47.5,53.7-65.3
+									c12.8-20.3,22.3-31.4,25.6-30.2c10.7,4.5,311.2,198.8,311.2,201.7c0,1.7-15.3,25.6-33.9,53.7c-39.7,59.5-111.2,133.9-160.4,166.6
+									c-90.9,60.3-188.1,91.3-316.2,100.9C5112.6,6787,5104.4,6787,5045.2,6782.5z"/>
+								<path fill="#202020" d="M3758.5,6031.5l-1.2-730.8l-9.1-34.3c-12-45.1-26-71.9-50.8-96.7c-34.7-34.7-79.4-49.2-153.8-49.6
+									c-106.2-0.4-169.9,44.6-243.9,171.1c-12,19.8-22.7,36-24,35.5c-1.7-0.8-76.5-45.9-166.2-100l-163.3-99.2l12.4-24.8
+									c74-147.6,202.1-259.2,356.3-310.4c162.9-54.1,372-49.2,525.3,12.4c183.9,74.4,291.8,228.2,320.3,456.7
+									c2.5,23.1,4.1,281.5,4.1,767.6v732.8h-202.5h-202.1L3758.5,6031.5z"/>
+							</g>
+							<g id="Triangles">
+								<g id="Blue_triangles">
+									<polygon fill="#3580C3" points="266.3,222.9 223,222.9 266.3,179.7 309.5,222.9 			"/>
+									<polygon fill="#3580C3" points="223,352.6 179.7,352.6 223,309.4 266.3,352.6 			"/>
+									<polygon fill="#3580C3" points="179.7,395.9 179.7,352.6 223,395.9 179.7,439.2 			"/>
+									<polygon fill="#3580C3" points="266.3,309.4 266.3,266.1 309.5,309.4 266.3,352.6 			"/>
+									<polygon fill="#3580C3" points="395.9,179.7 439.2,179.7 395.9,222.9 352.7,179.7 			"/>
+									<polygon fill="#3580C3" points="179.7,136.4 223,136.4 179.7,179.7 136.5,136.4 			"/>
+								</g>
+								<g id="Green_triangles">
+									<polygon fill="#45A547" points="223.2,266.2 223.2,309.4 179.9,266.2 223.2,222.9 			"/>
+									<polygon fill="#45A547" points="352.9,223 352.9,266.3 309.6,223 352.9,179.7 			"/>
+									<polygon fill="#45A547" points="352.7,309.4 309.5,309.4 352.7,266.2 396,309.4 			"/>
+									<polygon fill="#45A547" points="223.1,439.2 266.3,439.2 223.1,482.5 179.8,439.2 			"/>
+									<polygon fill="#45A547" points="439.3,222.9 439.3,266.2 396,222.9 439.3,179.6 			"/>
+									<polygon fill="#45A547" points="266.3,136.5 309.6,136.5 266.3,179.7 223.1,136.5 			"/>
+									<polygon fill="#45A547" points="136.5,179.7 136.5,223 93.3,179.7 136.5,136.5 			"/>
+								</g>
+								<g id="Red_triangles">
+									<polygon fill="#DB3227" points="179.8,223 179.8,179.7 223.1,223 179.8,266.3 			"/>
+									<polygon fill="#DB3227" points="309.6,266.2 266.4,266.2 309.6,222.9 352.9,266.2 			"/>
+									<polygon fill="#DB3227" points="266.3,309.4 266.3,352.7 223.1,309.4 266.3,266.2 			"/>
+									<polygon fill="#DB3227" points="223.1,352.7 266.3,352.7 223.1,396 179.8,352.7 			"/>
+									<polygon fill="#DB3227" points="309.5,352.7 309.5,396 266.2,352.7 309.5,309.4 			"/>
+									<polygon fill="#DB3227" points="352.9,136.5 352.9,179.7 309.6,136.5 352.9,93.2 			"/>
+									<polygon fill="#DB3227" points="136.5,266.2 93.3,266.2 136.5,222.9 179.8,266.2 			"/>
+									<polygon fill="#DB3227" points="136.5,93.2 179.8,93.2 136.5,136.5 93.3,93.2 			"/>
+								</g>
+								<g id="Yellow_triangles">
+									<polygon fill="#F3DF48" points="396,179.7 352.7,179.7 396,136.5 439.3,179.7 			"/>
+									<polygon fill="#F3DF48" points="266.3,136.5 223.1,136.5 266.3,93.2 309.6,136.5 			"/>
+									<polygon fill="#F3DF48" points="223.1,179.7 179.8,179.7 223.1,136.5 266.3,179.7 			"/>
+									<polygon fill="#F3DF49" points="179.8,309.4 179.8,352.7 136.5,309.4 179.8,266.2 			"/>
+								</g>
+								<g id="White_triangles">
+									<polygon fill="#FFFFFF" points="223.1,179.7 266.3,179.7 223.1,223 179.8,179.7 			"/>
+									<polygon fill="#FFFFFF" points="352.7,223 352.7,179.7 396,223 352.7,266.3 			"/>
+									<polygon fill="#FFFFFF" points="223.2,266.2 223.2,222.9 266.5,266.2 223.2,309.4 			"/>
+									<polygon fill="#FFFFFF" points="309.6,266.2 352.9,266.2 309.6,309.4 266.4,266.2 			"/>
+									<polygon fill="#FFFFFF" points="179.8,309.4 179.8,266.2 223.1,309.4 179.8,352.7 			"/>
+									<polygon fill="#FFFFFF" points="266.3,396 266.3,439.2 223.1,396 266.3,352.7 			"/>
+									<polygon fill="#FFFFFF" points="482.5,179.7 525.8,179.7 482.5,223 439.3,179.7 			"/>
+									<polygon fill="#FFFFFF" points="179.8,222.9 179.8,266.2 136.5,222.9 179.8,179.6 			"/>
+									<polygon fill="#FFFFFF" points="223.1,93.2 223.1,136.5 179.8,93.2 223.1,50 			"/>
+									<polygon fill="#FFFFFF" points="179.8,396 179.8,439.2 136.5,396 179.8,352.7 			"/>
+								</g>
+							</g>
+						</g>
+						</svg>
+						<h2>
+							JSConf Budapest 2016
+						</h2>
+					</div>
+
+					<aside class="notes">
+			 			This will be a quick teaser about JSConf Budapest 2016, so let's do it!
+	 				</aside>
+				</section>
+
+				<section class="flex" data-background="big-blue-mesh.jpg">
+					<div class="content">
+					<h2>
+						May 12-13
+					</h2>
+					</div>
+					<aside class="notes">
+			 			It will be on 12-13th May, which is a thursday-friday. The location is in literally the center of Budapest.
+	 				</aside>
+				</section>
+
+
+				<section class="flex" data-background="big-blue-mesh.jpg">
+					<div class="content">
+						<h3 class="fragment fade-out" data-fragment-index="2">
+								€ 269
+						</h3>
+
+						<h2 class="fragment"  data-fragment-index="1">
+							NODEBP16JSCBP
+						</h2>
+						<h1 class="fragment"  data-fragment-index="2">
+							€ 219
+						</h1>
+					</div>
+
+					<aside class="notes">
+			 			Tickets are only 269 euros, but! If you use this coupon code - which we will put on twitter later - it will give you 50 euros discount!
+	 				</aside>
+				</section>
+
+				<section data-background="big-blue-mesh.jpg" >
+					<div style="position: absolute; width: 100%; top: 0; height: 100%; left: 0;">
+
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-seldo.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-noopkat.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-mishunov.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-bcrypt.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-timpietrusky.jpg);"></div></div>
+
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-usefulthink.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-lrnrd.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-sambego.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-ddprrt.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-ohhoe.jpg);"></div></div>
+
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-koste4.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-brownhat57.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-robrkerr.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-nzgb.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-princi_ya.jpg);"></div></div>
+
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-mauricedb.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-oliverjash.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-hipsterbrown.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-captainsafia.jpg);"></div></div>
+<div class="card fragment"><div class="face" style="background-image: url(speakers/speaker-jaffathecake.jpg);"></div></div>
+
+<aside class="notes">
+	Speakers, and topics!
+
+	The CTO of NPM;
+	IOT, hardware hacks;
+	What feels fast on the web;
+	Letsencrypt, web security;
+	Music and lights with js and node;
+	Practical guide to Diversity;
+	WebMidi and guitars;
+	HTTP2;
+	IoT and cats;
+	Alice in JavaScript Wonderland;
+	JavaScript security;
+	Neural Simulations;
+	High Performance rendering;
+	Natural User interfaces;
+	React-Flux and Event-Sourcing;
+	handle offline on the web;
+	People first;
+	Memory management for JS;
+	;;
+	Master of ceremony: Jake Archibald
+
+
+</aside>
+
+					</div>
+				</section>
+
+				<section class="flex" data-background="big-blue-mesh.jpg">
+					<div class="content">
+						<h2>
+							There's more!
+						</h2>
+					</div>
+				</section>
+
+
+				<section class="flex" data-background="big-blue-mesh.jpg">
+					<div class="content">
+						<h3>
+							May 10
+						</h3>
+						<h1>
+							Workshops
+						</h1>
+						<h2>
+							No extra costs!
+						</h2>
+					</div>
+					<aside class="notes">
+						On May 10th, there will be a workshop day. The workshops will be announced as they "soon-ish" or when they became available.
+						These workshops will be available for free to everyone, who bought a ticket for JSConf Budapest 2016!
+					</aside>
+
+				</section>
+
+
+				<section class="flex flex-left" data-background="cssconf-blobs.jpg" data-background-transition="slide">
+					<div class="content">
+						<h3>
+							May 11
+						</h3>
+						<h1>
+							CSSConf<br />
+							Budapest
+						</h1>
+						<h3 class="fragment">
+							€ 135
+						</h3>
+					</div>
+					<aside class="notes">
+						On May 11th, CSSConf Budapest debuts for the first time ever.
+						Its a single-day single-track event about CSS and web development.
+						Tickets are 135 euros, also combo tickets for both JS and CSS conf are available!
+					</aside>
+				</section>
+				<section class="flex " data-background="#1e1f1f" data-background-transition="slide">
+					<div class="content">
+
+						<h3>
+							May 10: <a href="http://jsconfbp.com">workshops</a>
+						</h3>
+						<h3>
+							May 11: <a href="http://cssconfbp.rocks/">cssconfbp.rocks</a>
+						</h3>
+						<h3>
+							May 12-13: <a href="http://jsconfbp.com">jsconfbp.com</a>
+						</h3>
+					</div>
+					<aside class="notes">
+						So, to sum up the week of JSConf Budapest:
+						May 10 - workshop day, with several workshop planned ;;
+						May 11 - CSSConf Budapest ;;
+						May 12-13 - JSConf Budapest
+
+						Chech out our websites for more information!
+					</aside>
+				</section>
+
+				<section class="flex " data-background="#1e1f1f" data-background-transition="slide">
+					<div class="content">
+
+						<svg id="svg2" style="width: 20%;" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="148.12" width="182.26" version="1.1" xmlns:cc="http://creativecommons.org/ns#" viewBox="0 0 182.66667 150.66667" xmlns:dc="http://purl.org/dc/elements/1.1/"><metadata id="metadata8"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/></cc:Work></rdf:RDF></metadata><defs id="defs6"><clipPath id="clipPath20" clipPathUnits="userSpaceOnUse"><path id="path18" d="m0 10.012h1366.9v1110.9h-1366.9z"/></clipPath></defs><g id="g10" transform="matrix(1.3333 0 0 -1.3333 0 150.67)"><g id="g12" transform="scale(.1)"><g id="g14"><g id="g16" clip-path="url(#clipPath20)"><path id="path22" d="m1366.9 989.39c-50.27-22.309-104.33-37.387-161.05-44.18 57.89 34.723 102.34 89.679 123.28 155.15-54.18-32.15-114.18-55.47-178.09-68.04-51.13 54.49-124.02 88.55-204.68 88.55-154.89 0-280.43-125.55-280.43-280.43 0-21.988 2.457-43.398 7.258-63.91-233.08 11.68-439.72 123.36-578.04 293.01-24.141-41.4-37.969-89.567-37.969-140.97 0-97.308 49.489-183.13 124.76-233.44-45.969 1.437-89.218 14.058-127.03 35.078-0.043-1.18-0.043-2.348-0.043-3.52 0-135.9 96.68-249.22 224.96-275-23.512-6.41-48.281-9.8-73.86-9.8-18.089 0-35.628 1.711-52.781 5 35.711-111.41 139.26-192.5 262-194.77-96.058-75.23-216.96-120.04-348.36-120.04-22.621 0-44.961 1.332-66.918 3.91 124.16-79.568 271.55-125.98 429.94-125.98 515.82 0 797.86 427.31 797.86 797.93 0 12.153-0.28 24.223-0.79 36.25 54.77 39.571 102.31 88.95 139.93 145.2" fill="#ffffff"/></g></g></g></g></svg>
+
+						<h2>
+							<a href="https://twitter.com/jsconfbp">@jsconfbp</a>
+						</h2>
+						<h2>
+							<a href="https://twitter.com/cssconfbudapest">@cssconfbudapest</a>
+						</h2>
+					</div>
+					<aside class="notes">
+						and be sure to follow us on twitter, for instant updates!
+						Thank you, and see you all in May!
+					</aside>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+				history: true,
+
+				center: false,
+				overview: false,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
